@@ -8,7 +8,7 @@
     <title>Listes</title>
 </head>
 <body>
-    <h1>Ghassen</h1>
+    
     <button class="btn btn-danger">test</button>
 </body>
 </html>

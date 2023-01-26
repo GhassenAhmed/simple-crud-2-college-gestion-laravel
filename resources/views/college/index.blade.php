@@ -9,6 +9,5 @@
 </head>
 <body>
     
-    <button class="btn btn-danger">test</button>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-
+use App\Models\Enseignant;
 use Illuminate\Database\Seeder;
 
 class EnseignantSeeder extends Seeder
@@ -13,6 +13,8 @@ class EnseignantSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Enseignant::factory()
+        ->count(20)
+        ->create();
     }
 }

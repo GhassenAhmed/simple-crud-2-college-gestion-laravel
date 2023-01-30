@@ -13,6 +13,8 @@ class EdudiantSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Edudiant::factory()
+        ->count(20)
+        ->create();
     }
 }

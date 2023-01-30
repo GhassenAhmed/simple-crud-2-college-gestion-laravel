@@ -15,6 +15,11 @@ class CreateEnseignantsTable extends Migration
     {
         Schema::create('enseignants', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('matricule');
+            $table->string('nom');
+            $table->string('prenom');
+            $table->foreignId('departement_id');
+            $table->foreign('departement_id')->references('id')->on('departements');
             $table->timestamps();
         });
     }

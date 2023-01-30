@@ -14,7 +14,11 @@ class EdudiantFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'cin'=>randomNumber($nbDigits = NULL, $strict = false),
+            'nom'=>$this->faker->firstName(),
+            'prenom'=>$this->faker->lastName(),
+            'departement_id'=>Departement::get('id')->random(),
+            'created_at'=>now(),
         ];
     }
 }

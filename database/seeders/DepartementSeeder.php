@@ -13,6 +13,6 @@ class DepartementSeeder extends Seeder
      */
     public function run()
     {
-        //
+        
     }
 }

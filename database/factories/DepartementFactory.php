@@ -14,7 +14,7 @@ class DepartementFactory extends Factory
     public function definition()
     {
         return [
-            
+            'nom'=>$this->faker->company(),
         ];
     }
 }

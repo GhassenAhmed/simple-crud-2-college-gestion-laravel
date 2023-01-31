@@ -25,3 +25,4 @@ Route::get('/indexEnseignants', function () {
     return view('college.indexEnseignants');
 });
 
+Route::resource("/departements",DepartementController::class);

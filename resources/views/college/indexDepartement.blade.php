@@ -8,7 +8,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
      crossorigin="anonymous"></script>
-    <title>Listes</title>
+    <title>Departement</title>
 </head>
 <style>
     *{
@@ -41,10 +41,10 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" >Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{url('indexDepartement')}}">Departement</a>
+                    <a class="nav-link" href="#">Departement</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Etudiants</a>
@@ -57,6 +57,9 @@
             </div>
           </nav>
     
+          <div class="container">
+            
+          </div>
     
 </body>
 </html>

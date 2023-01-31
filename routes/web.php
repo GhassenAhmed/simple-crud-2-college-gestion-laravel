@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('college.index');
 });
+Route::get('/indexDepartement', function () {
+    return view('college.indexDepartement');
+});
+Route::get('/indexEtudiants', function () {
+    return view('college.indexEtudiants');
+});
+Route::get('/indexEnseignants', function () {
+    return view('college.indexEnseignants');
+});
 

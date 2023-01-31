@@ -14,7 +14,10 @@
     *{
         margin: 0;
         padding: 0;
-        background-color: #e5eaf5;
+        
+    }
+    body{
+        background-color: #ECF9FF;
     }
     a.navbar-brand{
         color: #3F0071;
@@ -40,22 +43,54 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" >Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{url('indexDepartement')}}">Departement</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Etudiants</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Enseignants</a>
-                  </li>
-                </ul>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="{{url('/')}}" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{url('indexDepartement')}}">Departement</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{url('indexEtudiants')}}">Etudiants</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{url('indexEnseignants')}}">Enseignants</a>
+                    </li>
+                  </ul>
               </div>
             </div>
           </nav>
+          <div class="container mt-5">
+
+            <table class="table ">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
     
     
 </body>

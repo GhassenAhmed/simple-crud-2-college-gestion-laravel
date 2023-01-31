@@ -20,9 +20,10 @@
         color: #3F0071;
         font-size: 30px;
         font-family:Roboto Slab;
+        font-weight:bold;
     }
     a.nav-link{
-        color:#6E85B7;
+        color:#3F0071;
         font-size: 25px;
         margin-left: 30px;
         font-family:Roboto Slab;
@@ -43,7 +44,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Departement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Etudiants</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Enseignants</a>
                   </li>
                 </ul>
               </div>

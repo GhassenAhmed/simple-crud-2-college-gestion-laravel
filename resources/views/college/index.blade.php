@@ -7,6 +7,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Listes</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: #e5eaf5;
+    }
+</style>
 <body>
 </body>
 </html>

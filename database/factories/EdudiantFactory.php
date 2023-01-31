@@ -17,7 +17,7 @@ class EdudiantFactory extends Factory
             'cin'=>$this->faker->randomNumber($nbDigits = NULL, $strict = false),
             'nom'=>$this->faker->firstName(),
             'prenom'=>$this->faker->lastName(),
-            'departement_id'=>Departement::get('id')->random(2),
+            'departement_id'=>Departement::get('id')->random(),
             'created_at'=>now(),
         ];
     }

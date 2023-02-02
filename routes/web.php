@@ -27,7 +27,7 @@ Route::get('/indexEnseignants', function () {
     return view('college.indexEnseignants');
 });
 
-Route::resource("/",DepartementController::class);
+Route::resource("/indexDepartement",DepartementController::class);
 
 
 

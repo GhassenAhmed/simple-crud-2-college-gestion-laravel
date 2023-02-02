@@ -68,6 +68,7 @@
     
           <div class="container mt-5">
             <h3 class="py-4">Departement</h3>
+            <a href="" class="btn btn-outline-success float-end">Add</a>
             <table class="table ">
                 <thead>
                     <tr>
@@ -75,6 +76,7 @@
                       <th scope="col">Nom</th>
                       <th scope="col">Created</th>
                       <th scope="col">Updated</th>
+                      <th scope="col">Operation</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -84,6 +86,10 @@
                         <td>{{$depart->nom}}</td>
                         <td>{{$depart->created_at}}</td>
                         <td>{{$depart->updated_at}}</td>
+                        <td>
+                          <a href="" class="btn btn-outline-info">Show</a>
+                          <a href="" class="btn btn-outline-danger">Delete</a>
+                        </td>
                       </tr>
                     @endforeach
                     

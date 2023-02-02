@@ -31,4 +31,4 @@ Route::resource("/indexDepartement",DepartementController::class);
 
 
 
-Route::resource("/indexEtudiants",EdudiantsController::class);
+Route::resource("/indexEtudiants",EdudiantController::class);

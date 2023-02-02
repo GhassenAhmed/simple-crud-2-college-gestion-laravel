@@ -20,18 +20,25 @@
         background-color: #FAFAFA;
     }
     a.navbar-brand{
-        color: #3F0071;
+        color: #2c2F36;
         font-size: 30px;
         font-family:Roboto Slab;
         font-weight:bold;
     }
     a.nav-link{
-        color:#3F0071;
+        color:#2c2F36;
         font-size: 25px;
         margin-left: 30px;
         font-family:Roboto Slab;
     }
-    
+    .bg-dark{
+      color: #FF0000;
+    }
+    h3{
+      color: #FF0000;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
 </style>
 <body>
     
@@ -62,7 +69,7 @@
 
 
           <div class="container mt-5">
-
+            <h3 class="py-4">Departement</h3>
             <table class="table ">
                 <thead>
                     <tr>
@@ -76,14 +83,38 @@
                     @foreach ($departements as $depart)
                     <tr>
                         <th scope="row">{{$depart->id}}</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>{{$depart->nom}}</td>
+                        <td>{{$depart->created_at}}</td>
+                        <td>{{$depart->updated_at}}</td>
                       </tr>
                     @endforeach
                     
                   </tbody>
               </table>
+
+
+              <h3 class="py-4">Departement</h3>
+              <table class="table ">
+                  <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Created</th>
+                        <th scope="col">Updated</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @foreach ($departements as $depart)
+                      <tr>
+                          <th scope="row">{{$depart->id}}</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                      @endforeach
+                      
+                    </tbody>
+                </table>
           </div>
     
     

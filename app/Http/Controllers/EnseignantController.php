@@ -15,7 +15,8 @@ class EnseignantController extends Controller
      */
     public function index()
     {
-        //
+        $enseignants=Enseignant::with('departement')->get();
+        return view('college.indexEnseignants',compact('enseignants'));
     }
 
     /**

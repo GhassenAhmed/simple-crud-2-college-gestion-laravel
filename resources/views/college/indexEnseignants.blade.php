@@ -11,25 +11,33 @@
     <title>Ensegnants</title>
 </head>
 <style>
-    *{
+     *{
         margin: 0;
         padding: 0;
-       
+        
     }
+    
     body{
-        background-color: #ECF9FF;
+        background-color: #FAFAFA;
     }
+
     a.navbar-brand{
-        color: #3F0071;
+        color: #2c2F36;
         font-size: 30px;
         font-family:Roboto Slab;
         font-weight:bold;
     }
     a.nav-link{
-        color:#3F0071;
+        color:#2c2F36;
         font-size: 25px;
         margin-left: 30px;
         font-family:Roboto Slab;
+    }
+    
+    h3{
+      color: #FF0000;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
     }
     
 </style>
@@ -59,7 +67,39 @@
               </div>
             </div>
           </nav>
-    
+          
+          <div class="container mt-4">
+            <h3 class="py-3">Enseignants</h3>
+            <a href="" class="btn btn-outline-success float-end">Add</a>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Matricule</th>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Prenom</th>
+                  <th scope="col">Departement</th>
+                  <th scope="col">Operation</th>
+                </tr>
+              </thead>
+              <tbody>
+                @foreach ($enseignants as $enseig)
+                <tr>
+                  <th scope="row">{{$enseig->id}}</th>
+                  <td>{{$enseig->matricule}}</td>
+                  <td>{{$enseig->nom}}</td>
+                  <td>{{$enseig->prenom}}</td>
+                  <td>{{$enseig->Departement->nom}}</td>
+                  <td>
+                    <a href="" class="btn btn-outline-info">Show</a>
+                    <a href="" class="btn btn-outline-danger">Delete</a>
+                  </td>
+                </tr>
+                @endforeach
+                
+              </tbody>
+            </table>
+          </div>
     
 </body>
 </html>

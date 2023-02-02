@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Departement;
 use App\Http\Requests\StoreDepartementRequest;
 use App\Http\Requests\UpdateDepartementRequest;
-
+use Illuminate\Http\Request;
 class DepartementController extends Controller
 {
     /**
@@ -15,8 +15,7 @@ class DepartementController extends Controller
      */
     public function index()
     {
-        $departements=Departement::all();
-        return view('college.index',compact('departements'));
+        
     }
 
     /**

@@ -15,7 +15,7 @@ class EdudiantController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**

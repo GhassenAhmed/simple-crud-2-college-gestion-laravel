@@ -73,14 +73,14 @@
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($departements as $depart)
+                    {{-- @foreach ($departements as $depart)
                     <tr>
                         <th scope="row">{{$depart->id}}</th>
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
                       </tr>
-                    @endforeach
+                    @endforeach --}}
                     
                   </tbody>
               </table>

@@ -15,7 +15,8 @@ class EdudiantController extends Controller
      */
     public function index()
     {
-        
+        $etudiants=Edudiant::all();
+        return view('college.index',compact('etudiants'));
     }
 
     /**

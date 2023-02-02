@@ -28,4 +28,7 @@ Route::get('/indexEnseignants', function () {
 });
 
 Route::resource("/",DepartementController::class);
+
+
+
 Route::resource("/indexEtudiants",EdudiantsController::class);

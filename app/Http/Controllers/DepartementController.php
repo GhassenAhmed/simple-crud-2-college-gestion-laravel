@@ -15,7 +15,8 @@ class DepartementController extends Controller
      */
     public function index()
     {
-        
+        $departements=Departement::all();
+        return view('college.index',compact('departements'));
     }
 
     /**

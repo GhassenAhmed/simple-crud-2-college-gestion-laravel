@@ -59,7 +59,7 @@
               </div>
             </div>
           </nav>
-    
+    <p>{{$etudiants}}</p>
     
 </body>
 </html>

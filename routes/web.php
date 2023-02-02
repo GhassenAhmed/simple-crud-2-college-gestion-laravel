@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DepartementController;
+use App\Http\Controllers\EdudiantController;
+use App\Http\Controllers\EnseignantController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +26,6 @@ Route::get('/indexEtudiants', function () {
 Route::get('/indexEnseignants', function () {
     return view('college.indexEnseignants');
 });
+
+Route::resource("/",DepartementController::class);
+Route::resource("/indexEtudiants",EdudiantsController::class);

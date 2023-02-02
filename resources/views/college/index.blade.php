@@ -17,7 +17,7 @@
         
     }
     body{
-        background-color: #ECF9FF;
+        background-color: #FAFAFA;
     }
     a.navbar-brand{
         color: #3F0071;
@@ -73,14 +73,14 @@
                     </tr>
                   </thead>
                   <tbody>
-                    {{-- @foreach ($departements as $depart)
+                    @foreach ($departements as $depart)
                     <tr>
                         <th scope="row">{{$depart->id}}</th>
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
                       </tr>
-                    @endforeach --}}
+                    @endforeach
                     
                   </tbody>
               </table>

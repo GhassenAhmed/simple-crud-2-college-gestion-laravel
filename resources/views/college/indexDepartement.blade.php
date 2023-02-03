@@ -41,30 +41,7 @@
 </style>
 <body>
     
-        <nav class="navbar navbar-expand-lg px-5 py-2">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">College</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link " aria-current="page" href="{{url('/')}}" >Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="{{url('indexDepartement')}}">Departement</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{url('indexEtudiants')}}">Etudiants</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{url('indexEnseignants')}}">Enseignants</a>
-                    </li>
-                  </ul>
-              </div>
-            </div>
-          </nav>
+       
     
           <div class="container mt-5">
             <h3 class="py-4">Departements</h3>

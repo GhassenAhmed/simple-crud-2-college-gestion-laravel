@@ -13,7 +13,11 @@ class EdudiantController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-   
+    public function index()
+    {
+        $etudiants=Edudiant::with('departement')->get();
+        return view('college.indexEtudiants',compact('etudiants'));
+    }
 
     /**
      * Show the form for creating a new resource.

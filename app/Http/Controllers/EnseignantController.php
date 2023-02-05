@@ -13,11 +13,7 @@ class EnseignantController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $enseignants=Enseignant::with('departement')->get();
-        return view('college.indexEnseignants',compact('enseignants'));
-    }
+   
 
     /**
      * Show the form for creating a new resource.

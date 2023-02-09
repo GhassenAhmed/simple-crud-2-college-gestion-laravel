@@ -9,5 +9,7 @@ class Edudiant extends Model
 {
     use HasFactory;
     
-    
+    public function departement(){
+        return $this->belongsTo(Departement::class);
+    }
 }

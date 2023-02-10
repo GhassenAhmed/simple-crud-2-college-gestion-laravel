@@ -14,9 +14,7 @@ use App\Http\Controllers\EnseignantController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('college.index');
-});
+
 Route::get('/indexDepartement', function () {
     return view('college.indexDepartement');
 });

@@ -30,7 +30,7 @@ Route::get('/indexEnseignants', function () {
 Route::resource("/indexDepartement",DepartementController::class);
 
 
-
+Route::resource("/indexEtudiants",EdudiantController::class);
 
 
 Route::resource("/indexEnseignants",EnseignantController::class);

@@ -67,7 +67,7 @@
           </nav>
           <div class="container mt-5">
             <h3 class="py-4 ">Etudiants</h3>
-            <a href="" class="btn btn-outline-success float-end">Add</a>
+            <a href="{{url('/etudiant')}}" class="btn btn-outline-success float-end">Add</a>
             <table class="table">
               <thead>
                 <tr>

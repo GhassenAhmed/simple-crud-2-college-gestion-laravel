@@ -26,7 +26,7 @@ class EdudiantController extends Controller
      */
     public function create()
     {
-        //
+        return view('create.Etudinat');
     }
 
     /**
@@ -37,7 +37,11 @@ class EdudiantController extends Controller
      */
     public function store(StoreEdudiantRequest $request)
     {
-        //
+        $etudiant=new Etudiant();
+        $etudiant->cin=$request->input('cin');
+        $etudiant->nom=$request->input('nom');
+        $etudiant->prenom=$request->input('prenom');
+        $etudiant->departement=$request->input('departement');
     }
 
     /**

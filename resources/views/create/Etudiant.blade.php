@@ -103,14 +103,14 @@
     <div class="container">
         <a href="{{url('/indexEtudiants')}}" class="btn btn-info mt-5">Go back</a>
         <h3 class="">Add Etudiant</h3>
-        <form class="form mt-5 py-5" method="post" action="{{url('create')}}">
+        <form class="form mt-5 py-5" method="post" action="{{url('/indexEtudiants')}}">
             {{ csrf_field() }}
             <p class="heading">Login</p>
             <input class="input" placeholder="Cin" type="text" name="cin">
             <input class="input" placeholder="Nom" type="text" name="nom"> 
             <input class="input" placeholder="Prenom" type="text" name="prenom">
             <input class="input" placeholder="Departement" type="text" name="departement"> 
-            <button class="btn">Add</button>
+            <button class="btn" type="submit">Add</button>
         </form>
     </div>
    

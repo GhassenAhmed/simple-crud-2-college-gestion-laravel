@@ -37,3 +37,5 @@ Route::resource("/indexEtudiants",EdudiantController::class);
 
 
 Route::resource("/indexEnseignants",EnseignantController::class);
+
+

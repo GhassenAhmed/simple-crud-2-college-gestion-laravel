@@ -26,9 +26,7 @@ Route::get('/indexEtudiants', function () {
 Route::get('/indexEnseignants', function () {
     return view('college.indexEnseignants');
 });
-Route::get('/etudiant', function () {
-    return view('create.Etudiant');
-});
+
 
 Route::resource("/indexDepartement",DepartementController::class);
 
